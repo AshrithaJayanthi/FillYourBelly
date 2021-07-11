@@ -1,0 +1,99 @@
+
+<!-- c -->
+<div class="row mt-5 ">
+    <div class="col-sm-6">
+        <h1 class="mt-5">Fill Your Belly</h1>
+        <p class="mt-2 tagline">the secret ingredient is love</p>
+    </div>
+    <div class="col-sm-6">
+        
+<img src="assets\Cooking.gif" alt="" width="100%" class="float-end">
+    </div>
+</div>
+<div class="div2 mt-3">
+    <div class="row">
+        <div class="col-sm-4 ">
+            <img src="assets\cooking2.gif" alt="" class="float-left" width="100%">
+        </div>
+        <div class="col-sm-8 intro p-4">
+            <h3 class="intro2">
+                Check this out! ⬇ 
+            </h3>
+            <p class="intro1">
+                Hello...is it humm-us you're looking for? 👅 <br>
+             Well jokes apart , if you love cooking but don't know where to start , you are at the right place <br>
+             Welcome to Fill Your Belly , a blog where every recipe is easy , understanble and 10 ingredients or less! <br>
+             We have curated all the recipes which can be prepared with so much ease and which makes you fall in love with the world of cooking
+            </p>
+        </div>
+        
+    </div>
+</div>
+<div class="div3">
+<h2 class="text-center mt-5">Trending Recipes</h2>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h4 class="text-center">Easy Homemade School Lunches </h4>
+        <div class="d-flex justify-content-center w-100 h-100 p-3">
+        <img src="{{dummyObj.results[1].thumbnail_url}}" class="align-middle" alt="..." width="300px">
+
+        <!-- d-flex justify-content-center w-75 h-75 -->
+      </div>
+      
+    
+    </div>
+      <div class="carousel-item">
+        <h4 class="text-center">Vegan Banana Pancakes </h4>
+        <div class="d-flex justify-content-center w-100 h-100 p-3">
+          <img src="{{dummyObj.results[0].thumbnail_url}}" class="align-middle" alt="..." width="300px">
+  
+          <!-- d-flex justify-content-center w-75 h-75 -->
+        </div>
+       
+      </div>
+      <div class="carousel-item">
+        <h4 class="text-center">Grilled Cajun Pork Chops With Peach Bourbon Sauce</h4>
+        <div class="d-flex justify-content-center w-100 h-100 p-3">
+          <img src="{{dummyObj.results[3].thumbnail_url}}" class="align-middle" alt="..." width="300px">
+  
+          <!-- d-flex justify-content-center w-75 h-75 -->
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!-- <h1>{{dummyObj.results[0]}}</h1> -->
+
+<h4 *ngFor="let obj of dummyObj.results">
+ 
+    
+ {{obj.name}}
+
+       <!--
+  <a href="{{obj.video_url}}">this is the video link</a> -->
+<img src="{{obj.thumbnail_url}}" alt="" width="100px">
+ 
+
+
+<!-- -->
+<h5 *ngFor="let in of obj.instructions">
+  {{in.display_text}}
+</h5>
+<h6>
+  {{obj.nutrition.fiber}}
+</h6>
+
+</h4>
+<!-- 
+</h1> -->

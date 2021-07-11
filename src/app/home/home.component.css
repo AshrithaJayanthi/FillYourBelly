@@ -1,0 +1,40 @@
+/* img{display: block;
+   
+    position:absolute;
+} */
+h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 87px;
+    font-weight: bold;
+    text-shadow: 1px 1px 6px #ff7f50;
+}
+.tagline{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 6px  #eaeaea ;
+   
+}
+
+img{
+
+}
+
+.intro{
+    background-color: #ffedbc;
+}
+.intro1{
+    font-family: 'Stint Ultra Condensed', cursive;
+    font-size: 25px;
+    
+}
+.intro2{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+   
+}
+.div3{
+    background-color: #faeddb;
+   
+}

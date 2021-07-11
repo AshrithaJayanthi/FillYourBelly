@@ -1,0 +1,34 @@
+li{
+    background-color:aliceblue;
+}
+a:focus{
+    background-color: bisque;
+}
+active{
+    background-color: palevioletred;
+    font-weight: bolder;
+}
+button:focus{
+    font-weight: bolder;
+}
+.card{
+    background-color: 
+    #e6f3f7 !important;
+    margin-left: 70px;
+}
+.desc{
+    background-color: #eef7fa;
+}
+button{
+    background-color: #bddfeb;
+    border-radius: 3px;
+    border: 1px solid pink;
+}
+h5{
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.active.nav-link{
+
+}
