@@ -24,12 +24,12 @@ img{
     background-color: #ffedbc;
 }
 .intro1{
-    font-family: 'Stint Ultra Condensed', cursive;
-    font-size: 25px;
+    font-family: 'Tangerine', cursive;
+    font-size: 18px;
     
 }
 .intro2{
-    font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'Tangerine', cursive;
     font-size: 27px;
     font-weight: bold;
    
@@ -37,4 +37,51 @@ img{
 .div3{
     background-color: #faeddb;
    
+}
+.trend{
+    font-family: 'Fuggles', cursive;
+    font-weight: bolder;
+    text-shadow: 2px 2px 8px #fdc4c4;
+    font-size: 55px;
+
+}
+h4{
+    font-family: 'Zen Loop', cursive;
+    font-weight: bolder;
+    font-size: 30px;
+}
+h6{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bolder;
+    font-size: 25px;
+}
+/*features section*/
+#features{
+
+
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    }
+    .feature-box{
+      padding: 5%;
+    
+    }
+    .feature-title{
+          font-size: 1.5rem;
+    }
+    .icon{
+      color: #ee9e82;
+      margin-bottom: 1rem;
+    }
+    .icon:hover{
+      color: #fafad7;
+    }
+
+.img1{
+
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+
 }

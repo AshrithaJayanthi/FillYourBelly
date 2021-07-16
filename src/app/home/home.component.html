@@ -6,8 +6,9 @@
         <p class="mt-2 tagline">the secret ingredient is love</p>
     </div>
     <div class="col-sm-6">
-        
-<img src="assets\Cooking.gif" alt="" width="100%" class="float-end">
+      
+<img src="assets\Cooking.gif" alt="" width="100%" class="float-end img1">
+      
     </div>
 </div>
 <div class="div2 mt-3">
@@ -21,16 +22,16 @@
             </h3>
             <p class="intro1">
                 Hello...is it humm-us you're looking for? 👅 <br>
-             Well jokes apart , if you love cooking but don't know where to start , you are at the right place <br>
+             Well jokes apart , if you love cooking but don't know where to start , you are at the right place. <br>
              Welcome to Fill Your Belly , a blog where every recipe is easy , understanble and 10 ingredients or less! <br>
-             We have curated all the recipes which can be prepared with so much ease and which makes you fall in love with the world of cooking
+             We have curated all the recipes which can be prepared with so much ease and which makes you fall in love with the world of cooking.
             </p>
         </div>
         
     </div>
 </div>
 <div class="div3">
-<h2 class="text-center mt-5">Trending Recipes</h2>
+<h2 class="text-center mt-5 trend">Trending Recipes</h2>
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -71,29 +72,60 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  <h6 class="text-center">
+    Head to Recipes section in the navbar
+  </h6>
 </div>
 
+
+<!-- features -->
+
+<section class="white-section"  id="features">
+  <div class="container-fluid">
+
+
+    <div class="row">
+
+
+      <div class="feature-box col-lg-4">
+        <i class=" icon far fa-check-circle fa-4x"></i>
+        <h3 class="feature-title">Easy to use.</h3>
+        <p>So easy to use, even your kids could do it.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class=" icon fas fa-bullseye fa-4x"></i>
+        <h3 class="feature-title">Simple search bar</h3>
+        <p>Just click the recipe name you want and recipe comes to you.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class=" icon far fa-heart fa-4x"></i>
+        <h3 class="feature-title">Guaranteed to work.</h3>
+        <p>Find the love for your cooking with these easy recipes.</p>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- <h1>{{dummyObj.results[0]}}</h1> -->
 
-<h4 *ngFor="let obj of dummyObj.results">
+<!-- <h4 *ngFor="let obj of dummyObj.results">
  
-    
+  <h5 *ngFor="let in of obj.instructions">
+    {{in.display_text}}
+  </h5>
+  <h6>
  {{obj.name}}
 
-       <!--
-  <a href="{{obj.video_url}}">this is the video link</a> -->
 <img src="{{obj.thumbnail_url}}" alt="" width="100px">
  
 
 
 <!-- -->
-<h5 *ngFor="let in of obj.instructions">
-  {{in.display_text}}
-</h5>
-<h6>
-  {{obj.nutrition.fiber}}
-</h6>
 
-</h4>
+  <!-- {{obj.nutrition.fiber}}
+</h6> -->
 <!-- 
-</h1> -->
+</h4> -->
+<!-- 
+</h1> --> 

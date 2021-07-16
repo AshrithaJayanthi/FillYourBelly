@@ -1,63 +1,61 @@
-<!-- <div class="main  d-flex justify-content-evenly">
-    <div class="container pt-2">
-
-         
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5 mb-5 p-5 row1" *ngFor="let obj of recipeObj.results">
-          <div class="col" >
-            <div class="card h-100 w-75 shadow">
-              <img src="{{obj.thumbnail_url}}" class="card-img-top w-100" alt="..." >
-            
-              <div class="card-body">
-                <div class="desc">
-                <h5 class="card-title text-center prtitle" >{{obj.name}}</h5>
-            </div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-     
-  
-  <!-- Modal -->
+<div class="search-box text-center" >
+  <input type="text" placeholder=" "  name="productTitle" id="" placeholder="search by recipe name" class="form form-control " [(ngModel)]="searchTerm"><span></span>
+</div>
  
-    <!-- </div> -->
-     <!-- creating a card -->
 
-     <div class="d-flex justify-content-between" *ngFor="let obj of recipeObj.results; "  >
-        <div class="text-center p-3" >
-            <img src="{{obj.thumbnail_url}}" alt="" width="100%" class="p-4 recipeImg">
-            <h3 class="p-2" >{{obj.name}}</h3>
-        </div>
-         <div class="d-flex flex-column bd-highlight p-5 subdiv">
-             <div class="div1 p-3 m-3" >
-                  <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Instructions
-            </button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-                    <div class="modal-dialog">
-                        
-                      <div class="modal-content" *ngFor="let obj of recipeObj.results;let ind=index">
 
-                        <div class="modal-header">
-                          
-                          <h5 class="modal-title" id="exampleModalLabel" >{{obj.name}}</h5>
-
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
+<!-- <input type="text" name="productTitle" id="" placeholder="search by recipe name" class="form form-control mt-2" [(ngModel)]="searchTerm"> -->
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1" *ngFor="let obj of recipeObj.results | search:searchTerm">
+            <!-- 1st -->
+            <div class="col">
+        <div class="card w-100 mt-5">
+            <div class="card-body" >
+                <div class="row">
+                    <div class="col-sm-8">
+                     <h4 class="card-text text-secondary" >{{obj.name}}</h4>
+                     <div class="dropdown p-2" >
+                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                       Instructions for the recipe
+                      </a>
                     
-                        <div class="modal-body"  *ngFor="let instObj of obj.instructions" >
-                          {{instObj.display_text}}
-                        
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          
-                        </div>
-                      </div>
+                      <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuLink">
+
+                        <li *ngFor="let object of obj.instructions ">
+                          {{object.display_text}}
+                        <hr>
+                        </li>
+                       
+                      </ul>
                     </div>
-                  </div>
-          </div>
-          
-        </div>  
+
+                   <h6 class="p-2 servings">
+                    {{obj.yields}}
+                   </h6>
+                   <div class="relatedtags p-1">
+                   <h5 class="p-1">
+                    Related tags:
+                  </h5>
+                 <h6 *ngFor="let obj2 of obj.tags;let last=last" style="display:inline-block" class="p-1">
+                       {{ obj2.display_name }} {{last ? '' : ', '}} 
+                 </h6>
+                </div>
+                <h6 *ngIf="obj['nutrition']?.length>0">
+                    {{obj['nutrition']['fiber']}}
+                </h6>
+                    </div>
+                    <div class="col-sm-4">
+                      <img src="{{obj.thumbnail_url}}" alt="" width="100%" class="slide-fwd-center">
+                   
+                           
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+            <!-- 2nd -->
+      
+        </div>   
     </div>
+
+<script  src="./script.js"></script>

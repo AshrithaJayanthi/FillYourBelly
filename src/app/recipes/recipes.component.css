@@ -13,16 +13,18 @@ button:focus{
 }
 .card{
     background-color: 
-    #e6f3f7 !important;
+    #F1F5C1 !important;
     margin-left: 70px;
 }
 .desc{
-    background-color: #eef7fa;
+    background-color: #ecf1ab
 }
 button{
-    background-color: #bddfeb;
+    background-color: #d8dcad;
     border-radius: 3px;
-    border: 1px solid pink;
+    border: 1px solid #f1f5c1;
+    font-family: 'Tangerine', cursive;
+    
 }
 h5{
     font-family: 'Tangerine', cursive;
@@ -31,4 +33,11 @@ h5{
 }
 .active.nav-link{
 
+}
+
+h5{
+    font-family: 'Fuggles', cursive !important;
+    font-weight: bolder;
+    font-size: 50px;
+    text-shadow: 2px 2px 8px #fa7849;
 }

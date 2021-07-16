@@ -1,0 +1,41 @@
+.logo1{
+    margin:20px 85px
+    
+}
+
+.c1{
+    background-color: #e2e0fa;
+}
+.c2{
+    background-color: #d3e3f8;
+}
+.c3{
+    background-color: #f8d6d3;
+}
+.btn3{
+    background-color:  #f5c5c1;
+    border-radius: 3px;
+    border: 1px solid #c49d9a
+    ;
+}
+.btn1{
+    background-color:  #d0cdf7;
+    border-radius: 3px;
+    border: 1px solid #9d9ac4;
+}
+.btn2{
+    background-color:  #c7dbf6
+    ;
+    border-radius: 3px;
+    border: 1px solid #9aacc4;
+}
+.card-title{
+    font-family: 'Fuggles', cursive !important;
+    font-weight: bolder;
+    font-size: 45px;
+}
+button{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 18px;
+}

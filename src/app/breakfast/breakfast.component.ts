@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 
 @Component({
-  selector: 'app-italian',
-  templateUrl: './italian.component.html',
-  styleUrls: ['./italian.component.css']
+  selector: 'app-breakfast',
+  templateUrl: './breakfast.component.html',
+  styleUrls: ['./breakfast.component.css']
 })
-export class ItalianComponent implements OnInit {
+export class BreakfastComponent implements OnInit {
 
   recipeObj:any;
   searchTerm:string;
@@ -17,7 +17,7 @@ export class ItalianComponent implements OnInit {
   }
   ngOnInit(){
 
-    this.dsobject.getItalianRecipesData().subscribe(
+    this.dsobject.getBreakfastRecipesData().subscribe(
 
         data=>{
 

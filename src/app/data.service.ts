@@ -20,7 +20,7 @@ export class DataService {
         },
   
         "headers":{
-          "x-rapidapi-key": "1c30b2d327msha16f6ff0f986273p10baccjsnd82abdee2dbb",
+          "x-rapidapi-key": "f11d9321cdmsh35f0f41d8d5c90dp16fc75jsnba37cc33edff",
 	"x-rapidapi-host": "tasty.p.rapidapi.com",
         }
       }
@@ -40,10 +40,98 @@ getIndianRecipesData():Observable<any>
     },
 
     "headers":{
-      "x-rapidapi-key": "1c30b2d327msha16f6ff0f986273p10baccjsnd82abdee2dbb",
+      "x-rapidapi-key": "f11d9321cdmsh35f0f41d8d5c90dp16fc75jsnba37cc33edff",
 "x-rapidapi-host": "tasty.p.rapidapi.com",
     }
-  }
+  } 
+); 
+}
+getItalianRecipesData():Observable<any>
+{
+  return this.hc.get<any>("https://tasty.p.rapidapi.com/recipes/list",
+  {
+    "params":{
+      "from": "0",
+      "size": "100",
+      "tags": "italian"
+    },
+
+    "headers":{
+      "x-rapidapi-key": "f11d9321cdmsh35f0f41d8d5c90dp16fc75jsnba37cc33edff",
+"x-rapidapi-host": "tasty.p.rapidapi.com",
+    }
+  } 
+); 
+}
+getAmericanRecipesData():Observable<any>
+{
+  return this.hc.get<any>("https://tasty.p.rapidapi.com/recipes/list",
+  {
+    "params":{
+      "from": "0",
+      "size": "100",
+      "tags": "american"
+    },
+
+    "headers":{
+      "x-rapidapi-key": "f11d9321cdmsh35f0f41d8d5c90dp16fc75jsnba37cc33edff",
+"x-rapidapi-host": "tasty.p.rapidapi.com",
+    }
+  } 
+); 
+}
+
+getBreakfastRecipesData():Observable<any>
+{
+  return this.hc.get<any>("https://tasty.p.rapidapi.com/recipes/list",
+  {
+    "params":{
+      "from": "0",
+      "size": "100",
+      "tags": "breakfast"
+    },
+
+    "headers":{
+      "x-rapidapi-key": "f11d9321cdmsh35f0f41d8d5c90dp16fc75jsnba37cc33edff",
+"x-rapidapi-host": "tasty.p.rapidapi.com",
+    }
+  } 
+); 
+}
+
+getLunchRecipesData():Observable<any>
+{
+  return this.hc.get<any>("https://tasty.p.rapidapi.com/recipes/list",
+  {
+    "params":{
+      "from": "0",
+      "size": "100",
+      "tags": "lunch"
+    },
+
+    "headers":{
+      "x-rapidapi-key": "f11d9321cdmsh35f0f41d8d5c90dp16fc75jsnba37cc33edff",
+"x-rapidapi-host": "tasty.p.rapidapi.com",
+    }
+  } 
+); 
+}
+
+getDinnerRecipesData():Observable<any>
+{
+  return this.hc.get<any>("https://tasty.p.rapidapi.com/recipes/list",
+  {
+    "params":{
+      "from": "0",
+      "size": "100",
+      "tags": "dinner"
+    },
+
+    "headers":{
+      "x-rapidapi-key": "f11d9321cdmsh35f0f41d8d5c90dp16fc75jsnba37cc33edff",
+"x-rapidapi-host": "tasty.p.rapidapi.com",
+    }
+  } 
 ); 
 }
   }  
